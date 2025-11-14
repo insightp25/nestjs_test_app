@@ -6,11 +6,7 @@ export default function UsersPage() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch(`/api/users?name=${"daisy"}`)
-        .then((res) => res.json())
-        .then((data) => {
-            setUsers(data.users);
-        });
+    
     }, []);
 
   return (
